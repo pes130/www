@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Actividad 1. Iniciación a Packet Tracer | Pablo Esteban</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Actividad 1. Iniciación a Packet Tracer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Blog personal y recopilación de contenido para asignaturas de Informática de Secundaria y Formación Profesional." />
+<meta property="og:description" content="Blog personal y recopilación de contenido para asignaturas de Informática de Secundaria y Formación Profesional." />
+<link rel="canonical" href="http://0.0.0.0:4000/docencia/par/unidad1/iniciacion-packet-tracer.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/docencia/par/unidad1/iniciacion-packet-tracer.html" />
+<meta property="og:site_name" content="Pablo Esteban" />
+<script type="application/ld+json">
+{"headline":"Actividad 1. Iniciación a Packet Tracer","description":"Blog personal y recopilación de contenido para asignaturas de Informática de Secundaria y Formación Profesional.","@type":"WebPage","url":"http://0.0.0.0:4000/docencia/par/unidad1/iniciacion-packet-tracer.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Pablo Esteban" /></head>
+<body><header class="site-header">
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Pablo Esteban</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/docencia/">Docencia</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Actividad 1. Iniciación a Packet Tracer</h1>
+  </header>
+
+  <div class="post-content">
+    <p>El <strong>objetivo</strong> de esta actividad guiada es coger soltura usando <strong>packet tracer</strong>. Packet tracer es una potente herramienta didáctica de Cisco para aprender redes.</p>
+
+<p>El <strong>resultado final</strong>, y que iremos haciendo paso a paso, será la siguiente red:
+<img src="/docencia/par/unidad1/img/resultado.png" alt="Resultado final actividad" class="img-responsive" /></p>
+
+<p>Todos los dispositivos van a pertenecer a la red <em>192.168.1.0/24</em>. Eso quiere decir que todos tendrán una ip que será del tipo <em>192.168.1.X</em>, donde X es un número entre 1 y 255.</p>
+
+<h2 id="índice-de-contenidos">Índice de contenidos</h2>
+<ul>
+  <li><a href="#1-configurar-ip-de-cada-uno-de-los-equipos">1. Configurar ip de cada uno de los equipos</a></li>
+  <li><a href="#2-conexiones">2. Conexiones</a></li>
+  <li><a href="#3-configuraci-n-ip">3. Configuración IP</a></li>
+  <li><a href="#4-configurar-un-servidor-web-en-el-servidor">4. Configurar un servidor web en el servidor</a></li>
+  <li><a href="#5-lo-que-se-pide">5. Lo que se pide</a></li>
+</ul>
+
+<p><a name="1-configurar-ip-de-cada-uno-de-los-equipos"></a></p>
+<h2 id="1-configurar-ip-de-cada-uno-de-los-equipos">1. Configurar ip de cada uno de los equipos</h2>
+
+<ul>
+  <li>
+    <p>Haz doble click en el primer equipo (el de más a la izquierda). Aparece un diálogo donde lo primero que se muestra es un esquema de la parte trasera de un equipo y sus conexiones:
+<img src="/docencia/par/unidad1/img/interfaces.png" alt="Conexiones de un equipo físico" class="img-responsive" /></p>
+  </li>
+  <li>Unas conexiones son intercambiables (como la tarjeta de red), y otras no.</li>
+  <li>En la pestaña <strong>Config</strong>, apartado <strong>Global</strong> -&gt; <strong>Settings</strong>, podemos cambiarle:
+    <ul>
+      <li>El <strong>nombre mostrado</strong>: ponle PC-Alumno 1
+        <ul>
+          <li>Gateway/DNS ipv4
+            <ul>
+              <li>Gateway: Ip por la que sales de la red. Lo dejamos en blanco por ahora</li>
+              <li>DNS: servidor de resolución de nombres. Lo dejamos en blanco por ahora
+  <img src="/docencia/par/unidad1/img/configuracion_global.png" alt="Configuración global" class="img-responsive" /></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>En <strong>Config</strong>–&gt;<strong>Interface</strong>, podemos ver las distintas interfaces de red: Bluetooth, Ethernet…, centrémonos en la FastEthernet0, que es la única tarjeta o interfaz de red que tiene nuestro PC.
+        <ul>
+          <li><strong>MAC Address</strong>: Dirección MAC o dirección física</li>
+          <li><strong>IP Configuration:</strong>
+            <ul>
+              <li><strong>DHCP</strong>: asignada automáticamente por un servidor DHCP</li>
+              <li><strong>Static</strong>: la ponemos nosotros manualmente. 
+  <img src="/docencia/par/unidad1/img/configuracion_interfaz.png" alt="Configuración de una interfaz" class="img-responsive" />
+  <strong>OJO!!</strong> Cuando configures las interfaces de un router, tienes que activarlas a mano:
+  <img src="/docencia/par/unidad1/img/interfaces_router.png" alt="Activar la interfaz de un router" /></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>La pestaña <strong>Desktop</strong> la veremos más adelante. Se trata del software que en principio trae instalado el ordenador.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a name="2-conexiones"></a></p>
+<h2 id="2-conexiones">2. Conexiones</h2>
+<p>Sirven para unir los nodos. Son los cables.
+<img src="/docencia/par/unidad1/img/conexiones.png" alt="Selección de conexiones" />
+Primero seleccionamos la categoría <strong>‘Connections’</strong> , y luego el tipo de cable que necesitemos. Por ahora vamos a usar el automático (rayo naranja y amarillo) que se ocupa por nosotros de seleccionar el tipo de cable más adecuado.</p>
+
+<p>Unimos todos los nodos para que quede como la figura siguiente:
+<img src="/docencia/par/unidad1/img/resultado.png" alt="Resultado final actividad" class="img-responsive" /></p>
+
+<p><strong>Nota</strong>: Recuerda que las interfaces de los routers hay que activarlas a mano. Si la interfaz Gig0/0/0 te sale con un punto rojo, deberías revisar que esté conectada.</p>
+
+<p><a name="3-configuraci-n-ip"></a></p>
+<h2 id="3-configuración-ip">3. Configuración IP</h2>
+<p>Queremos que todas las máquinas pertenezcan a la red <strong>192.168.1.0/24</strong>. Esto lo veremos con más detalle en unidades posteriores, pero como adelanto, esto significa que todos los nodos (Pcs, switches, routers, …) van a tener una IP del tipo <em>192.168.1.X</em>, donde X es un número entre 0 y 255.</p>
+
+<p>Aquí hay que precisar una cosa muy importante: <strong>las direcciones IP se dan a una interfaz de red</strong> (o tarjeta de red, como quieras) <strong>y no al dispositivo en sí</strong>. Esto significa que si un PC tiene 2 tarjetas de red, podemos asignarle 2 IPs. Un router, por ejemplo, sirve para separar redes y encaminar entre ellas, así que lo normal es que cada una de sus interfaces de red esté en una red distinta (por ejemplo, una en la 192.168.1.0/24, otra en la 192.168.5.0/24). En este caso, es obvio que a cada interfaz hay que asignarle una dirección IP correspondiente a la red a la que pertenece.</p>
+
+<p><strong>Nota importante:</strong></p>
+
+<p>En este rango de direcciones entre la 0 y la 255 <em>(192.168.1.0 – 192.168.1.255)</em> hay varias <strong>direcciones reservadas</strong>:</p>
+
+<ul>
+  <li><strong>192.168.1.0</strong>: la primera del rango, la 0, no puede asignarse a ningún nodo de la red. Se usa para nombrar o denominar a la red. De ahí lo de 192.168.1.0/24</li>
+  <li><strong>192.168.1.255</strong>: es decir, la última del rango,. Tampoco puede asignarse a ninguna máquina. Es la dirección de broadcast de la red. Es decir, una IP especial usada para referirse a todos los dispositivos de nuestra red. En teoría podrías hacer un:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ping <span class="nt">-b</span> 192.168.1.255 
+</code></pre></div>    </div>
+    <p>para hacer <strong>ping</strong> a todas las máquinas de tu red, pero las máquinas suelen ignorarlo. Piensa que sería una manera sencilla de colapsar una red.</p>
+  </li>
+  <li><strong>192.168.1.1</strong>: Ésta sí que puede asignarse a un nodo de la red, aunque como convención y como buena práctica, suele asignarse al router de nuestra red (mejor dicho, a la interfaz que el router tenga en nuestra red</li>
+</ul>
+
+<p>Por ahora, nosotros vamos a establecer las Ips de los nodos de la red de <strong>manera estática</strong>, o sea a mano. Sin embargo, en el mundo real (la red de tu casa, o de clase, o del trabajo) esto se hace de <strong>manera automática</strong> a través de un protocolo llamado <strong>DHCP</strong>, que veremos más adelante.</p>
+
+<p>Resumiendo, hemos de tener algo así:</p>
+<ul>
+  <li>la <strong>denominación de nuestra red</strong> es 192.168.1.0/24</li>
+  <li>La <strong>IP del PC-Alumno 1</strong> será 192.168.1.10</li>
+  <li>La <strong>IP del Servidor</strong> será 192.168.1.20</li>
+  <li>La <strong>IP del portátil</strong>, será la 192.168.1.30</li>
+  <li>La <strong>IP de la interfaz Gig0/0/0</strong> del router será la 192.168.1.1</li>
+</ul>
+
+<p>Para <em>probar que las máquinas de la red tienen conectividad, vamos a hacer un ping entre ellas</em>. Para ello, haz doble clic sobre el PC-Alumno 1, y ve a la pestaña Desktop, y una vez aquí, haz clic en el icono <strong>Command promt</strong>:
+<img src="/docencia/par/unidad1/img/desktop.png" alt="Desktop - command promt" class="img-responsive" /></p>
+
+<p>Te aparecerá una shell o consola. Escribe en ella el comando:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ping 192.168.1.30
+</code></pre></div></div>
+
+<p>Si recuerdas, la IP <strong>192.168.1.130</strong> era la del <em>portátil</em>. Lo que está haciendo este comando es hacer ping desde la máquina actual (la del Alumno-01) al portátil. El comando ping está basado en el protocolo ICMP (que veremos más adelante, xD) y básicamente manda una señal muy sencilla al portátil, para que este te responda con un eco. Se usa mucho para comprobar que una máquina está levantada.</p>
+
+<p>Si todo ha ido bien, el portátil debe haberte respondido al ping correctamente. En concreto, mandas 4 mensajes de 32 bits, por eso, en el resultado puedes ver 4 respuestas:
+<img src="/docencia/par/unidad1/img/ping_promt.png" alt="Command promt" class="img-responsive" /></p>
+
+<p>Prueba a hacer ping entre el resto de máquinas, y a la interfaz <strong>Gig0/0/0</strong> del router para comprobar que todo esté ok.</p>
+
+<p><a name="4-configurar-un-servidor-web-en-el-servidor"></a></p>
+<h2 id="4-configurar-un-servidor-web-en-el-servidor">4. Configurar un servidor web en el servidor</h2>
+<p>El nodo <strong>servidor</strong> en packet tracer se puede configurar para que ejecute distintos servicios. Por aclarar, el <strong>servidor</strong> es la máquina física (un ordenador básicamente), que ejecuta programas a los que puede accederse desde fuera a través de un número de puerto (lo veremos más adelante). A esos programas, los llamaremos <strong>servicios</strong>.
+Por ejemplo, un <strong>servicio web o http</strong>, es un programa que si lo invocas desde un cliente (por ejemplo, usando un navegador desde el PC-Alumno-01 y conectándote a la dirección 192.168.1.20/index.html) el te devuelve el código html de esa página para que tu navegador lo renderice y la pinte.
+Si te fijas en la pestaña <em>Services</em> del servidor, además del servicio http, tenemos otros:
+<img src="/docencia/par/unidad1/img/congiguracion_servidor_http.png" alt="Command promt" class="img-responsive" /></p>
+
+<p>Packet tracer te permite editar estos archivos .html. Pulsa <em>edit</em>, donde pone index.html, y sustituye su contenido por el siguiente:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;title&gt;</span>Servidor web de packet tracer<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Planificación y Administración de Redes<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;h2&gt;</span>Primero de ASIR<span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;hr&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Esta es una página de prueba servida por nuestro servidor web en packet tracer.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Quick Links:
+            <span class="nt">&lt;ul&gt;</span>        
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">'helloworld.html'</span><span class="nt">&gt;</span>A small page<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">'copyrights.html'</span><span class="nt">&gt;</span>Copyrights<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">'image.html'</span><span class="nt">&gt;</span>Image page<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">'cscoptlogo177x111.jpg'</span><span class="nt">&gt;</span>Image<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<p>De manera que si te vas al PC-Alumno-01, y en la pestaña desktop pulsas en <strong>Browser</strong>:
+<img src="/docencia/par/unidad1/img/desktop_webbrowser.png" alt="Command promt" class="img-responsive" /></p>
+
+<p>Se abre el navegador. Si navegas a <em>http://192.168.1.20</em>, obtienes el siguiente resultado:
+<img src="/docencia/par/unidad1/img/desktop_webbrowser2.png" alt="Command promt" class="img-responsive" /></p>
+
+<p><a name="5-lo-que-se-pide"></a></p>
+<h2 id="5-lo-qué-se-pide">5. Lo qué se pide</h2>
+<p>Para que esta actividad sea considerada válida, <strong>tienen que cumplirse los siguientes requisitos</strong>:</p>
+<ol>
+  <li>Debe ser la misma red que la que propone la actividad.</li>
+  <li>Los nombres de las máquinas deben ser los mismos.</li>
+  <li>Las IPs de las máquinas deben ser las solicitadas.</li>
+  <li>Las máquinas deben poder hacer ping entre sí.</li>
+  <li>Debo poder conectarme desde un navegador en el equipo <strong>PC-Alumno 1</strong> al servidor (192.168.1.20) y debe mostrarse el html modificado.</li>
+</ol>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half">
+      <h2 class="footer-heading">Pablo Esteban</h2>
+        <ul class="contact-list">
+          <li class="p-name"></li><li><a class="u-email" href="mailto:pablo.esteban.sanchez@gmail.com">pablo.esteban.sanchez@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col one-half">
+        <p>Blog personal y recopilación de contenido para asignaturas de Informática de Secundaria y Formación Profesional.
+</p>
+      </div>
+
+      <div class="social-links"><ul class="social-media-list"><li><a href="https://github.com/pes130" title="pes130"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a href="https://twitter.com/pabloestebans" title="pabloestebans"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li><li><a href="/feed.xml" title="rss"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg></a></li></ul>
+</div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
