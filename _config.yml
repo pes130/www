@@ -41,6 +41,7 @@ minima:
 header_pages:
  - about.md
  - docencia.md
+ - cursos.md
 
 # Build settings
 theme: minima
